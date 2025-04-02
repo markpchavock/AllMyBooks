@@ -8,7 +8,6 @@
     tools:context=".ui.HomeFragment">
 
 
-    <!--RecyleView - 1° Passo - Montar o Layout-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleiew_books"
         android:layout_width="0dp"

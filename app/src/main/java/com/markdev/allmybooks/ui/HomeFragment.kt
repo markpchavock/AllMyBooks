@@ -22,8 +22,7 @@ class HomeFragment : Fragment() {
 
     val viewModel: HomeViewModel by viewModels()
 
-    //RecyleView - 8° Passo - Criar a adapter na fragment, declarar, instanciar e identificar:
-    // 8.1 declarar e instanciar:
+
     val adapter: BookAdapter = BookAdapter()
 
 
@@ -36,26 +35,21 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        //RecyleView - 2° Passo - identificação do código e atribuição do layout(como a recView se comporta)
-        //Ela irá se comportar como um linear Layout
+
         binding.recycleiewBooks.layoutManager = LinearLayoutManager(context)
 
-        //8.2 identificar
+
         binding.recycleiewBooks.adapter = adapter
 
         attachListener()
-        //RecyleView - 15° Passo - Chamar a função que busca todos os livros do repositório
-        //viewModel.getAllBooks() - foi posteriomente colocada em OnResume devido ao motivo de:
-        // sempre que atualizar a tela, a fragmente vai buscar a nova atualização da lista.
 
-        //RecyleView - 16° Passo - Criar o código para observar a variável
         setObservers()
 
         return binding.root
     }
 
     override fun onResume() {
-        // sempre que atualizar a tela, a fragmente vai buscar a nova atualização da lista.
+
         super.onResume()
         viewModel.getAllBooks()
     }
@@ -80,8 +74,8 @@ class HomeFragment : Fragment() {
             }
 
             override fun onFavoriteClick(id: Int) {
-                viewModel.favorite(id) // Vai alterar o simbolo do favorito
-                viewModel.getAllBooks()  // Vai listar novamente a lista atualizada
+                viewModel.favorite(id)
+                viewModel.getAllBooks()
             }
         })
 

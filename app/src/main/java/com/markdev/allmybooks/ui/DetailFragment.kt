@@ -100,12 +100,12 @@ class DetailFragment : Fragment() {
             .setPositiveButton(
                 getString(R.string.dialog_positive_button_yes)
             ) { dialog, which ->
-                //confirmar remoção
+
                 viewModel.deleteBook(bookId)
 
             }
             .setNegativeButton(getString(R.string.dialog_negative_button_no)) { dialog, witch ->
-                //negar remoção
+
                 dialog.dismiss()
             }
         builder.create().show()

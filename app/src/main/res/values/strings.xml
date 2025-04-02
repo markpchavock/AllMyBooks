@@ -1,0 +1,24 @@
+<resources>
+
+
+    <string name="app_name">MyBooks</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="title_book_details">Detalhes</string>
+
+
+    <string name="dialog_message_delete_item">Tem certeza de que deseja excluir este item?</string>
+    <string name="dialog_positive_button_yes">Sim</string>
+    <string name="dialog_negative_button_no">Não</string>
+
+
+    <string name="msg_removed_successfully">Item removido com sucesso!</string>
+    <string name="msg_no_books">Nenhum livro encontrado nos seus favoritos!</string>
+
+
+    <string name="button_remove_book">Remover livro</string>
+    <string name="desc_book_image">Imagem de livros</string>
+
+</resources>

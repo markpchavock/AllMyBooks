@@ -4,4 +4,4 @@ Aplicativo AllMyBooks
 
 O App AllMyBooks foi desenvolvido para gerir os livros de um usuário no qual o mesmo poderá classifica-lo como favorito e ter uma listagem propria em outra tela com informações adicionais sobre o livro.
 
-O App foi desenvolvido utilizando conceitos de binding,recycleView, viewModel, fragment , ciclo de vida de Activity, banco de dados SQLite e arquitetura de software MVVM, distribuindo as responsabilidades entre as classes facilitando a legibilidade do código e facilitando futuras manutenções.
+O App foi desenvolvido utilizando conceitos de binding,recycleView, viewModel, fragment , ciclo de vida de Activity, banco de dados SQLite e arquitetura de software MVVM, distribuindo as responsabilidades entre as classes facilitando a legibilidade do código e futuras manutenções respeitando as boas práticas.
